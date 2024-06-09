@@ -1,0 +1,32 @@
+This is a host header injection with a password token you will need to intercept.
+
+- When you first login you are given credentials to use throughtout the application. username: admin@sheridancollege.ca. password: sheridaniscool1234
+
+- You will attempt to login. You will get a result of "Invalid password or email"
+
+- You must figure out the /register route. You can do this by looking for clues such as. (index page has register there and hint.)
+
+- In the register page you will enter the same login and password that was given to you.
+
+- You will get an error. But it tells you to check the login page. Navigate back to it
+
+- You will come to see a new link "Forgot your password?"
+
+- This is an important page. In this /resetpassword route you will enter the username from the start. Now before submitting, you will open burp suite and 2 terminals.
+
+- Turn intercept on and hit submit on the webpage. You will be greeted with info. 
+
+- On terminal 1 - run pythom -m http.server 8989
+
+- On terminal 2 - Install Ngrok - run ngrok --scheme http https 8989
+
+- now change the Host header in burp suite to the forwarding URL in ngrok. 
+
+- Forward the burp suite interception. if done correctly you will see the token pop up in the python server.
+
+- get that token and input it into the URL like so: /resetpassword?token= TOKEN HERE
+
+- then you are brought to a different route /change_password, here you will change your password to anything.
+
+- Once thats done, you will have been greeted with a page stating "flag here". Open up burp suite again. intercept on. refresh the page. send that page to the repeater.
+  hit send and you will see the flag in the response header.

@@ -1,0 +1,1 @@
+1. Flask cookies can be tampered with.. Goal is to change auth to admin

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forge the cookie</title>
+<link rel="stylesheet" href="/static/css/styles.css">
+{% if 'auth' in session %}
+      <a href="/reset">reset</a>
+{%endif %}
+
+<body>
+{% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+
+
+                 {% for category, message in messages %}
+                        <div class="{{ category }}">{{ message }}</div>
+
+                 {% endfor %}
+                {% endif %}
+            {% endwith %}
+<form action="/search" method="POST">
+<div class="wrap">
+<h1>Cookies</h1>
+
+   <div class="search">
+
+      <input type="text" name= "name" class="searchTerm" placeholder="Enter cream!">
+
+   </div>
+    <input type="submit" value="submit">
+
+</div>
+
+</form>
+<br><br><br><br><br><br><br><div style="text-align: center; font-family:verdana;">Cool Facts about Oreos!</div>
+
+<br><div style="text-align: center; font-family:verdana;">Oreos first went on sale on March 6, 1912. The cookie was marketed by Nabisco and has become one of America’s bestselling brands of cookies.
+Although it is owned by Kraft Foods now, it is still the same cookie sandwich that was made in 1912.
+To celebrate 100 years of Oreo cookies, the birthday cake flavor was released in 2012 worldwide.
+These 100th anniversary Oreos had a special birthday cake flavor cream filling, but with sprinkles. And on one of the cookies was printed “OREO 100.”</div>
+
+<br><div style="text-align: center; font-family:verdana;">The developing great taste of the Oreo cookie doesn’t stop! For many years different flavors have been released across the world.
+These include inspiration from your favorite desserts like Key Lime Pie, which was released in July 2015.
+Cinnamon bun flavor was released in January 2016, Mississippi Mud Pie and Waffles and Syrup were both limited edition in May 2017.
+Some other creative Oreo flavors include cotton candy, peppermint bark, chocolate hazelnut, jelly donut, chocolate strawberry, and toasted coconut.</div>
+
+<br><div style="text-align: center; font-family:verdana;">Everyone is familiar with the famous double biscuit and cream center filling, but did you know it has been adapted over the years into many shapes and sizes?
+The first adaptation of the Oreo was in 1974 when the Double Stuf Oreo was introduced.
+It supposedly had double the amount of filling, and it was available in not only original but peanut butter, cool mint, chocolate cream, and golden.
+In 1976 the Football shaped Oreo cookie was released! This was the same loved cookie but just reshaped to look like a football.
+1987 was the year of the Big Stuf cookie. These were sold individually as they were multiple sizes bigger than the original Oreo cookie.
+The mini Oreo was introduced to the market in 1991 as bite-size versions of the original cookie.</div>
+</body>
+</html>

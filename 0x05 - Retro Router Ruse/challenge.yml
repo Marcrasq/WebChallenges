@@ -1,0 +1,22 @@
+﻿attempts: 0
+author: Marc Rasquinha
+category: WEB
+description: Apply to be an Admin today! Website has been attacked before so try and login or register. May or may not be there
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- retroCTF{h0St_iS_n022t_s@fE}
+hints:
+- content: There is a hidden page, the hint is provided in the description aswell... The server has automated scripts to reset the password, how can you get the token?.
+  cost: 0
+name: Retro Router Ruse
+requirements:
+- CoC
+state: visible
+tags:
+- intermediate
+type: dynamic
+value: 100
+version: '0.1'

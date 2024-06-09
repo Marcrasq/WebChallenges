@@ -1,0 +1,22 @@
+﻿attempts: 0
+author: Marc Rasquinha
+category: WEB
+description: 1. Cool Oreo fact page where you can search for words!
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- retroCTF{f0r9e_t0_th3_9uf_utre}
+hints:
+- content: 1. Flask cookies can be tampered with..
+  cost: 0
+name: Forge to the future
+requirements:
+- CoC
+state: visible
+tags:
+- Medium
+type: dynamic
+value: 100
+version: '0.1'

@@ -1,0 +1,21 @@
+<head>
+    <title>Change password Page</title>
+</head>
+<link rel="stylesheet" href="static/styles.css">
+<body class="center bg2 max">
+
+    <div id="login-form-wrap">
+        <h2><img src="static/palm_tree_black.jpg" width="300" height="300"></h2>
+        <form action="/you_made_it" method="POST" id="login-form">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <p>Flag is here</p>
+
+        </form>
+    </div>
+</body>

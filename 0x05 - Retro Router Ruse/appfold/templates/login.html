@@ -1,0 +1,42 @@
+<head>
+    <title>Login Page</title>
+</head>
+<link rel="stylesheet" href="static/styles.css">
+<body class="center bg2 max">
+<a href="/reset">reset</a>
+    <div id="login-form-wrap">
+        <h2><img src="static/palm_tree_black.jpg" width="300" height="300"></h2>
+        <form action="/login" method="POST" id="login-form">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <p>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <i class="validation">
+                    <span></span>
+                    <span></span>
+                </i>
+            </p>
+            <p>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <i class="validation">
+                    <span></span>
+                    <span></span>
+                </i>
+            </p>
+            <p>
+                <input type="submit" id="login" value="Login">
+            </p>
+
+<!-- you must register before getting this link -->
+{% if 'logged' in session %}
+
+<a href="{{ url_for("resetpassword") }}">Forgot your password?</a>
+ {%endif %}
+        </form>
+    </div>
+</body>

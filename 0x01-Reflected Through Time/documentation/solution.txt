@@ -1,0 +1,7 @@
+Reflected XSS:
+
+Only alert will trigger the flag.
+
+On the search field, enter "<script> alert("anything") </script>" and the flag will appear
+
+Solution: retroCTF{r3fl3cT3d_th9R3w_t1M3}

@@ -1,0 +1,22 @@
+﻿attempts: 0
+author: Marc Rasquinha
+category: WEB
+description: 1. You must complete "Admins rights" before this challenge. Theres something fishy in the admin settings page, we'll just leave it for now, nothing can go wrong right?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- retroCTF{"s3rV3RR_1s_V2n6e2ra3le"}
+hints:
+- content: 1. The URL parameters seem vunerable... Theres a couple blacklisted words..
+  cost: 0
+name: Fishy Business
+requirements:
+- CoC
+state: visible
+tags:
+- intermediate
+type: dynamic
+value: 100
+version: '0.1'

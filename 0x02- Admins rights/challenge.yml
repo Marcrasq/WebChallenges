@@ -1,0 +1,22 @@
+﻿attempts: 0
+author: Marc Rasquinha
+category: WEB
+description: The login is only for ADMINS! Please do not attempt to login....
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- retroCTF{th3_m0sT_ba5ic_in3j3ct}
+hints:
+- content: 1. The login parameters seem vunerable... admin' is filtered..
+  cost: 0
+name: Admins rights
+requirements:
+- CoC
+state: visible
+tags:
+- beginner
+type: dynamic
+value: 100
+version: '0.1'

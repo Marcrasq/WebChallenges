@@ -1,0 +1,22 @@
+﻿attempts: 0
+author: Marc Rasquinha
+category: WEB
+description: The website is still in progress, its fairly new! Leave your feedback on one of the pages
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- retroCTF{r3fl3cT3d_th9R3w_t1M3}
+hints:
+- content: Don't ALERT the SEARCH team!!!!!!
+  cost: 0
+name: Reflected Through Time
+requirements:
+- CoC
+state: visible
+tags:
+- intro
+type: dynamic
+value: 100
+version: '0.1'

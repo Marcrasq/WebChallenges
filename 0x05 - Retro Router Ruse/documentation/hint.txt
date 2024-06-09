@@ -1,0 +1,1 @@
+There is a hidden page, the hint is provided in the description aswell... The server has automated scripts to reset the password, how can you get the token?.

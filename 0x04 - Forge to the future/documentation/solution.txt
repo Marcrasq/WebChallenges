@@ -1,0 +1,20 @@
+Flask cookie forgery:
+
+Type a word from the text, the website will hint if you're on the right path
+
+Once it says you can go further, take the session cookies and decode it and analyze
+
+goal is to change "auth" empty to "admin". 
+
+get a wordlist of the site using cewl, or manually entering key words.
+
+brute force using "flask-unsign --unsign --cookie < cookie.txt --wordlist wordlist.txt" (this will brute force into the secret key)
+
+with the secret key we do "flask-unsign --sign --cookie "{'auth':'admin'}" --secret cream (you will get a forged cookie)
+
+With the forged cookie input into websites current cookie then refresh page for flag
+
+flag: 
+
+
+retroCTF{f0r9e_t0_th3_9uf_utre}

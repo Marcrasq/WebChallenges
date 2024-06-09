@@ -1,0 +1,7 @@
+SQL INJECTION:
+
+Input the sql inject command into the username field. Make sure theres something in the password field.
+
+admin' is filtered out
+possible injection: ' OR 1=1 --
+retroCTF{th3_m0sT_ba5ic_in3j3ct}
